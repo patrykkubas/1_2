@@ -5,8 +5,7 @@ run = "java -classpath .:target/dependency/* Main"
 entrypoint = "src/main/java/Main.java"
 
 hidden = ["**/*.class"]
-
-modules = ["java-graalvm22.3"]
+modules = ["java-graalvm22.3", "nix"]
 
 
 [packager]
@@ -35,8 +34,7 @@ language = "java"
 
 
 [nix]
-
-channel = "stable-22_11"
+channel = "stable-25_05"
 
 
 [debugger]
